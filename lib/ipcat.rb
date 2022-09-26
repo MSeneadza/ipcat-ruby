@@ -39,7 +39,6 @@ class IPCat
     end
 
     def load!
-      puts "***************** In Load"
       reset_ranges!
       # NB: loading an array of marshaled ruby objects takes ~15ms;
       # versus ~100ms to load a CSV file
@@ -69,4 +68,4 @@ class IPCat
 end
 
 # Load dataset
-IPCat.load!
+IPCat.load_csv!
