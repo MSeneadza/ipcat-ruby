@@ -31,7 +31,7 @@ class IPCat
       reset_ranges!
 
       require 'open-uri'
-      open(path).readlines.each do |line|
+      URI.open(path).readlines.each do |line|
         first, last, name, url = line.split(',')
         ranges << IPRange.new(first, last, name, url).freeze
       end
@@ -68,4 +68,4 @@ class IPCat
 end
 
 # Load dataset
-IPCat.load!
+IPCat.load_csv!
