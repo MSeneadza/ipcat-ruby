@@ -27,7 +27,7 @@ class IPCat
       @ranges = new_ranges
     end
 
-    def load_csv!(path = 'https://raw.githubusercontent.com/rale/ipcat/master/datacenters.csv')
+    def load_csv!(path = 'https://raw.githubusercontent.com/MSeneadza/ipcat/master/datacenters.csv')
       reset_ranges!
 
       require 'open-uri'
