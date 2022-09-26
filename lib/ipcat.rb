@@ -68,4 +68,4 @@ class IPCat
 end
 
 # Load dataset
-IPCat.load_csv!
+IPCat.load!
